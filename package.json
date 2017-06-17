@@ -1,0 +1,30 @@
+{
+  "name": "geo_mapping_project",
+  "version": "1.0.0",
+  "description": "This will be a tool that maps out data on a geoJson object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/litlw/geoMapping.git"
+  },
+  "keywords": [
+    "geoMapping",
+    "visualization",
+    "mapping",
+    "angularjs",
+    "d3js",
+    "data",
+    "big",
+    "data",
+    "design"
+  ],
+  "author": "Hugh Ritchie, Ana Jofre",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
