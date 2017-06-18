@@ -25,6 +25,11 @@
   "author": "Hugh Ritchie, Ana Jofre",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "d3": "^4.9.1",
     "live-server": "^1.2.0"
   }
 }

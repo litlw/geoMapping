@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geo Projection Project</title>
+    <meta description="This project proveds a geo-mapping tool of open source big data. This project is done in conjunction with OCAD University, York University, and Empress DB" />
+
+    <!-- SCRIPTS -->
+      <!-- ANGULAR -->
+      <script src="node_modules/angular/angular.js"></script>
+      <!-- ADD-ONS -->
+      <script src="node_modules/angular-aria/angular-aria.js"></script>
+      <script src="node_modules/angular-animate/angular-animate.js"></script>
+      <script src="node_modules/angular-material/angular-material.js"></script>
+
+      <!-- APP.JS -->
+      <script src="js/app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css" />
+    <!-- APP -->
+  </head>
+  <body ng-app="geo_mapping_tool">
+    <div ng-controller="mainController">
+      <md-card>
+        <md-card-header>
+          <p class="md-title">
+            {{ helloWorld }}
+          </p>
+        </md-card-header>
+        <md-card-content ng-repeat="item in locations">
+          <md-card>
+            <md-card-header>
+              <p class="md-title">
+                {{item.name}}
+              </p>
+            </md-card-header>
+            <md-card-content>
+              <p>
+                Here are the data sources:
+              </p>
+              <ul>
+                <li ng-repeat="src in item.data_sources">
+                  Name: {{src.name}}
+                  Link: <md-button href="{{src.src}}"> {{ src.src}}</md-button>
+                </li>
+              </ul>
+              <p>
+                anyways, enough flapping about. time to actually do some work, lololol
+              </p>
+            </md-card-content>
+          </md-card>
+        </md-card-content>
+        here is stuff
+
+      </md-card>
+      other stuff
+    </div>
+
+
+<!-- DIRECTIVES -->
+<!-- MODULES -->
+
+<!-- CONTROLLER -->
+<script src="js/controllers/MainController.js"></script>
+  </body>
+</html>
