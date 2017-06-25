@@ -21,5 +21,5 @@ app.controller("mainController", function($scope) {
       src: "src/locations.csv"
     }] //some source here
   }];
-$scope.helloWorld = "Hello World. I just wanted to let you know that I think you are a huge plunker. fuck man. ";
+$scope.helloWorld = "Hello World.";
 });
