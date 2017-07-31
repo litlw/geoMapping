@@ -1,4 +1,5 @@
-app.controller("mapController", ['$scope', 'mapMaker', function($scope, mapMaker){
+app.controller("mapController", ['$scope', 'mapMaker','importData', 'timeLine',
+function($scope, mapMaker, importData, timeLine){
   $scope.title="my page"
   $scope.data = {
     maps: {
@@ -18,5 +19,18 @@ app.controller("mapController", ['$scope', 'mapMaker', function($scope, mapMaker
   $scope.title="boop"
   $scope.click = function(){
     console.log("clicked")
+  }
+  $scope.table = function(){
+    state = importData.return();
+    if(document.getElementById('miniView_title').innerHTML != ""){
+      return true;
+      console.log("true");
+    } else {
+      return false;
+      console.log("false");
+    }
+  }
+  $scope.timeline = function(){
+    timeLine();
   }
 }])

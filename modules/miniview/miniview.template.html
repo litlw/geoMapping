@@ -1,14 +1,72 @@
 <style>
   #miniView{
     background-color: #22324c;
-    height: 400px;
+    height: 600px;
     overflow: scroll;
     border: 2px solid #eee;
   }
+  p.light {
+    color: #eee;
+  }
 </style>
-<div layout="column" ng-controller="mapController" >
+<div layout="column" ng-controller="mapController">
 
-  <div  id="miniView">
+  <div  id="miniView" layout-align="center center">
+    <p class="md-title light" id="miniView_title" layout-padding>
+    </p>
+    <div id="miniViewMap">
+
+    </div>
+    <table ng-if="title" flex-offset="10" flex="80" style="margin-top: 50px;">
+      <tr>
+        <th>
+          Item
+        </th>
+        <th>
+          Value
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Item
+        </td>
+        <td id="miniView_1">
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Item
+        </td>
+        <td id="miniView_2">
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Item
+        </td>
+        <td id="miniView_3">
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Item
+        </td>
+        <td id="miniView_4">
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Item
+        </td>
+        <td id="miniView_5">
+
+        </td>
+      </tr>
+    </table>
   </div>
 
 </div>
