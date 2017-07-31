@@ -1,36 +1,30 @@
 # geoMapping
 
+### Purpose: 
 
-### something I need to implement is how the directives and methods are stored.
-As of right now, they are stored all over the place. What I should do instead is consolidate them into different files.
-
-Example:
-
-## BAD:
-
-controllers/controllers.js
-
-  has all the controllers in one file
-
-directives/mapdirective.js
-
-  has the mapping directive
-
-directives/map_directive_html.html
-
-  this is the html - which has to stay the html.
+To generate an interactive visualization of data filtered by location and time. 
 
 
-## GOOD
+### Working: 
 
-controllers/controllers.js
+Map generates properly
 
-  has the main controller
+minimap shows selected map
 
-modules/map.js
+data can be retrieved from click location
 
-  has the directive, the controller, and any factory functions built in.
+### Not Working: 
 
-map_directive.html
+pan/zoom of minimap
 
-  the html. 
+
+
+### To-Do: 
+
+add factories for timeline
+
+update data based on output from timeline factory
+
+Fill with data
+
+Hand it off and celebrate!
