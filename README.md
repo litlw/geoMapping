@@ -1,11 +1,11 @@
 # geoMapping
 
-### Purpose: 
+### Purpose:
 
-To generate an interactive visualization of data filtered by location and time. 
+To generate an interactive visualization of data filtered by location and time.
 
 
-### Working: 
+### Working:
 
 Map generates properly
 
@@ -13,13 +13,13 @@ minimap shows selected map
 
 data can be retrieved from click location
 
-### Not Working: 
+### Not Working:
 
 pan/zoom of minimap
 
 
 
-### To-Do: 
+### To-Do:
 
 add factories for timeline
 

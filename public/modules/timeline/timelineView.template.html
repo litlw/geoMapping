@@ -1,0 +1,21 @@
+<style>
+  #timeLine{
+    background-color: #22324c;
+    height: 200px;
+    overflow-x: scroll;
+    border: 2px solid #eee;
+  }
+  rect.bar:hover{
+    fill: red;
+  }
+  rect.bar.active{
+    fill: red;
+    opacity: 1;
+  }
+</style>
+<div layout="column" ng-controller="mapController">
+
+  <div ng-init="timeline()" id="timeLine">
+  </div>
+
+</div>
