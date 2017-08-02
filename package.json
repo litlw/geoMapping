@@ -8,10 +8,11 @@
     "start": "live-server"
   },
   "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
     "express": "*",
     "mongoose": "*",
-    "body-parser": "*",
-    "cors": "*"
+    "path": "^0.12.7"
   },
   "author": "hugh",
   "license": "ISC"
